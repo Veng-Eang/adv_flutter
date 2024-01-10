@@ -22,7 +22,7 @@ class _HomeScreen extends State<HomeScreen> {
               ),
             ),
             const SizedBox(
-              height: 40,
+              height: 80,
             ),
             const Text(
               "Learn Flutter the fun way!",
@@ -32,14 +32,17 @@ class _HomeScreen extends State<HomeScreen> {
               ),
             ),
             const SizedBox(
-              height: 40,
+              height: 80,
             ),
-            IconButton(
+            OutlinedButton.icon(
               style: TextButton.styleFrom(
-                  foregroundColor: Colors.white70,
-                  backgroundColor: const Color.fromARGB(255, 20, 8, 53)),
-              onPressed: () {},
-              icon: const Icon(Icons.arrow_forward),
+                foregroundColor: Colors.white70,
+              ),
+              onPressed: () {
+                print("don't kick me");
+              },
+              icon: const Icon(Icons.arrow_right_alt),
+              label: const Text("Start Quiz"),
               // child: const Text("Start Quiz"),
             )
           ]),
